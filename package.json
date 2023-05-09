@@ -1,7 +1,7 @@
 {
   "name": "19-web-product-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "a simple rest api",
   "main": "index.js",
   "scripts": {
     "build": "babel src --out-dir build",
@@ -13,7 +13,7 @@
     "url": "git+https://github.com/dashfuentes/19-web-product-app.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Danya Santos basado en Fazt",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/dashfuentes/19-web-product-app/issues"
