@@ -4,8 +4,9 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "build": "",
-        "start": "nodemon src/index.js --exec babel-node"
+        "build": "babel src --out-dir build",
+        "dev": "nodemon src/index.js --exec babel-node",
+        "start": "node build/index.js"
     },
     "repository": {
         "type": "git",
