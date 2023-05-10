@@ -9,6 +9,8 @@ app.set("pkg", pkg);
 
 app.use(morgan("dev"));
 
+app.use(express.json());
+
 app.get("/", (req, res) => {
   res.json({
     name: app.get("pkg").name,
