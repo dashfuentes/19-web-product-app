@@ -1,10 +1,15 @@
 import express from 'express'
 import morgan from 'morgan'
 
+import { createRoles } from './libs/initialsetup.js'
+
 import productsRoutes from './routes/products.routes.js'
 import authRoutes from './routes/auth.routes.js'
 
+
+
 const app = express()
+createRoles()
 
 app.use(morgan('dev'))
 app.use(express.json())
