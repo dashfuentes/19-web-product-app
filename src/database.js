@@ -6,5 +6,3 @@ mongoose.connect("mongodb://localhost/mycompanydb",{
 })
 .then(db => console.log('DB connected succesfully'))
 .catch(error => console.log(error))
-
-mongoose.set('strictQuery', false);
