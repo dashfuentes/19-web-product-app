@@ -3,11 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/index.js --exec babel-node",
+    "start": "node src/index.js"
   },
   "repository": {
     "type": "git",
+    
     "url": "git+https://github.com/dashfuentes/19-web-product-app.git"
   },
   "keywords": [],
@@ -16,11 +19,14 @@
   "bugs": {
     "url": "https://github.com/dashfuentes/19-web-product-app/issues"
   },
-  "homepage": "https://github.com/dashfuentes/19-web-product-app#readme"
-,
- "devDependencies": {
+  "homepage": "https://github.com/dashfuentes/19-web-product-app#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.21.5",
+    "@babel/core": "^7.21.8",
+    "@babel/node": "^7.20.7",
+    "@babel/preset-env": "^7.21.5",
     "jest": "^28.1.3",
-    "nodemon": "^2.0.19",
+    "nodemon": "^2.0.22",
     "supertest": "^6.2.4"
   },
   "dependencies": {
