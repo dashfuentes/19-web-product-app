@@ -1,7 +1,7 @@
 {
   "name": "19-web-product-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "api simple",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -14,7 +14,7 @@
     "url": "git+https://github.com/dashfuentes/19-web-product-app.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Jesús Villanueva",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/dashfuentes/19-web-product-app/issues"
