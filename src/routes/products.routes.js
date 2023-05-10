@@ -2,10 +2,10 @@ import {Router} from 'express'
 
 const router = Router()
 import  * as productCtrl from '../controllers/products.controller.js'
-import {middlewares} from '../middlewares'
+import middlewares from '../middlewares/index.js'
 
 
-router.post('/', verifyToken, productCtrl.createProduct)
+router.post('/', middlewares.verifyToken, productCtrl.createProduct)
 
 router.get('/', productCtrl.getProducts)
 

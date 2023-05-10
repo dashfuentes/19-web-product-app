@@ -1,3 +1,3 @@
-import {verifyToken} from './authJwt'
+import {verifyToken} from './authJwt.js'
 
-export default verifyToken
+export default {verifyToken}
