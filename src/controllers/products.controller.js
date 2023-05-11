@@ -13,13 +13,16 @@ export const getProducts = async (req,res) =>{
 }
 
 export const getProductById = async (req,res) =>{
-    const {productId} = req.params.productId
+    const productId = req.params.productId;
+    console.log("productId: "+productId);
     const product = await Product.findById(productId)
+    console.log(`prduct found: ${product}`);
+    if(!product) return res.status(404).json({message:'product not found'})
     res.status(200).json(product)
 }
 
 export const updateProductById = async (req,res) =>{
-    const {productId} = req.params.productId
+    const productId = req.params.productId
     const updatedProduct = await Product.findByIdAndUpdate(productId, req.body, {
         new:true
     })
@@ -27,8 +30,8 @@ export const updateProductById = async (req,res) =>{
 }
 
 export const deleteProductById = async (req,res) =>{
-    const {productId} = req.params.productId
+    const productId = req.params.productId
     //const deletedProduct = 
     await Product.findByIdAndDelete(productId)
-    res.status(204).json() 
+    res.status(204).json({message:"product deleted"}) 
 }
